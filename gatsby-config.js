@@ -6,7 +6,7 @@
  *
  */
 
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
@@ -79,7 +79,10 @@ module.exports = {
       resolve: `gatsby-omni-font-loader`,
       options: {
         enableListener: true,
-        preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
+        preconnect: [
+          `https://fonts.googleapis.com`,
+          `https://fonts.gstatic.com`,
+        ],
         web: [
           {
             name: `Bitter`,
@@ -94,20 +97,20 @@ module.exports = {
     },
 
     {
-      resolve: "gatsby-plugin-google-tagmanager",
+      resolve: 'gatsby-plugin-google-tagmanager',
       options: {
-        id: "GTM-P5M7K3B4",
-  
+        id: 'GTM-P5M7K3B4',
+
         // Include GTM in development.
         //
         // Defaults to false meaning GTM will only be loaded in production.
-        includeInDevelopment: true,
-  
+        includeInDevelopment: false,
+
         // datalayer to be set before GTM is loaded
         // should be an object or a function that is executed in the browser
         //
         // Defaults to null
-        defaultDataLayer: { platform: "gatsby" },
+        // defaultDataLayer: { platform: 'gatsby' },
       },
     },
 
