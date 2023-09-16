@@ -11,6 +11,9 @@ require('dotenv').config({
 })
 
 module.exports = {
+  siteMetadata: {
+    siteUrl: 'https://davidrhoderick.com',
+  },
   /**
    * Adding plugins to this array adds them to your Gatsby site.
    *
