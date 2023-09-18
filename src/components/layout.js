@@ -1,6 +1,14 @@
-import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import parse from "html-react-parser"
+import React from 'react'
+import { Link, useStaticQuery, graphql } from 'gatsby'
+import parse from 'html-react-parser'
+
+import { Analytics } from '@vercel/analytics/react'
+
+import { tryLoadAndStartRecorder } from '@alwaysmeticulous/recorder-loader'
+
+await tryLoadAndStartRecorder({
+  projectId: 'W2wAFvW3hMiSW9em4pA3i9ndDBK9Wk31O4XSksE0',
+})
 
 const Layout = ({ isHomePage, children }) => {
   const {
@@ -32,7 +40,10 @@ const Layout = ({ isHomePage, children }) => {
         )}
       </header>
 
-      <main>{children}</main>
+      <main>
+        {children}
+        <Analytics />
+      </main>
 
       <footer>
         © {new Date().getFullYear()}, Built with

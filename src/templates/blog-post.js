@@ -14,11 +14,6 @@ import '../css/@wordpress/block-library/build-style/theme.css'
 import Bio from '../components/bio'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
-import { tryLoadAndStartRecorder } from '@alwaysmeticulous/recorder-loader'
-
-await tryLoadAndStartRecorder({
-  projectId: 'W2wAFvW3hMiSW9em4pA3i9ndDBK9Wk31O4XSksE0',
-})
 
 const BlogPostTemplate = ({ data: { previous, next, post } }) => {
   const featuredImage = {

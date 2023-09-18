@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "@alwaysmeticulous/recorder-loader": "^2.73.0",
+    "@vercel/analytics": "^1.0.2",
     "gatsby": "~5.3.2",
     "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-google-gtag": "^5.11.0",
