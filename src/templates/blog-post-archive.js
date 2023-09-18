@@ -5,6 +5,11 @@ import parse from 'html-react-parser'
 import Bio from '../components/bio'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
+import { tryLoadAndStartRecorder } from '@alwaysmeticulous/recorder-loader'
+
+await tryLoadAndStartRecorder({
+  projectId: 'W2wAFvW3hMiSW9em4pA3i9ndDBK9Wk31O4XSksE0',
+})
 
 const BlogIndex = ({
   data,

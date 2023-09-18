@@ -7,6 +7,11 @@
   resolved "https://registry.npmjs.org/@aashutoshrathi/word-wrap/-/word-wrap-1.2.6.tgz"
   integrity sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==
 
+"@alwaysmeticulous/recorder-loader@^2.73.0":
+  version "2.73.0"
+  resolved "https://registry.npmjs.org/@alwaysmeticulous/recorder-loader/-/recorder-loader-2.73.0.tgz"
+  integrity sha512-xkZDgHsO7HM4cXKyTaVoejGsX3DY3M6ozsJgrI7AlD1/HI+3mQJ2/mpyedZefN/PfRfZdgySIVWMT6npvNHlRQ==
+
 "@ampproject/remapping@^2.2.0":
   version "2.2.1"
   resolved "https://registry.npmjs.org/@ampproject/remapping/-/remapping-2.2.1.tgz"
